@@ -30,6 +30,7 @@ def bintrayApikey = properties.getProperty("bintray.apikey")
 
 def javadocName = properties.getProperty("javadoc.name")
 
+version projectVersionName
 group = projectGroupId
 
 // This generates POM.xml with proper parameters
@@ -38,9 +39,8 @@ install {
         pom {
             project {
                 name projectName
-                groupId projectGroupId
-                artifactId projectArtifactId
-                version projectVersionName
+                //groupId projectGroupId
+                //artifactId projectArtifactId
                 packaging projectPackaging
                 url projectSiteUrl
                 licenses {
